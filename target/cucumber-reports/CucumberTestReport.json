@@ -1,0 +1,642 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "To perform the validations for the comments for the post made by a specific user",
+        "description": "",
+        "id": "to-test-the-post-and-comments-functionality-of-the-ui-application;to-perform-the-validations-for-the-comments-for-the-post-made-by-a-specific-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2366925500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Post feature is available to the user",
+            "match": {
+              "location": "PostStepDefinitions.featureIsAvailableToUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 879527799,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Searching the user \"Samantha\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Samantha",
+                  "offset": 20
+                }
+              ],
+              "location": "PostStepDefinitions.searchUser(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 439920400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Fetching the id of the user",
+            "match": {
+              "location": "PostStepDefinitions.fetchUser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 728694701,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Searching the userId of the user mentioned",
+            "match": {
+              "location": "PostStepDefinitions.getUserId()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 326608400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Searching for the posts written by the user using userId",
+            "match": {
+              "location": "PostStepDefinitions.searchPost()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9001119500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Fetching the comments for each post and validating emails in the comment section",
+            "match": {
+              "location": "PostStepDefinitions.validateEmail()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@success"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "As a user I want to make sure the API schema is correct for user service",
+        "description": "",
+        "id": "to-test-the-post-and-comments-functionality-of-the-ui-application;as-a-user-i-want-to-make-sure-the-api-schema-is-correct-for-user-service",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 357490799,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Post feature is available to the user",
+            "match": {
+              "location": "PostStepDefinitions.featureIsAvailableToUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 333834699,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Searching the user \"Samantha\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Samantha",
+                  "offset": 20
+                }
+              ],
+              "location": "PostStepDefinitions.searchUser(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 386041601,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "API schema for Users should be correct",
+            "match": {
+              "location": "PostStepDefinitions.schemaForUsersShouldBeCorrect()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@schema"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "As a user I want to make sure the API schema is correct for post service",
+        "description": "",
+        "id": "to-test-the-post-and-comments-functionality-of-the-ui-application;as-a-user-i-want-to-make-sure-the-api-schema-is-correct-for-post-service",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 344587400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Post feature is available to the user",
+            "match": {
+              "location": "PostStepDefinitions.featureIsAvailableToUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 365686400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Searching the user \"Samantha\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Samantha",
+                  "offset": 20
+                }
+              ],
+              "location": "PostStepDefinitions.searchUser(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1141769600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Searching the userId of the user mentioned",
+            "match": {
+              "location": "PostStepDefinitions.getUserId()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3530100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "API schema for Posts should be correct",
+            "match": {
+              "location": "PostStepDefinitions.schemaForPostShouldBeCorrect()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@schema"
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "To perform the validations for the comments for the post made by a specific user",
+        "description": "",
+        "id": "to-test-the-post-and-comments-functionality-of-the-ui-application;to-perform-the-validations-for-the-comments-for-the-post-made-by-a-specific-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 344757300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Post feature is available to the user",
+            "match": {
+              "location": "PostStepDefinitions.featureIsAvailableToUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 372160600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Searching the user \"Samantha\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Samantha",
+                  "offset": 20
+                }
+              ],
+              "location": "PostStepDefinitions.searchUser(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9051200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Fetching the id of the user",
+            "match": {
+              "location": "PostStepDefinitions.fetchUser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 341089000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Searching the userId of the user mentioned",
+            "match": {
+              "location": "PostStepDefinitions.getUserId()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 356688800,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Searching for the posts written by the user using userId",
+            "match": {
+              "location": "PostStepDefinitions.searchPost()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3617026700,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Fetching the comments for each post and validating emails in the comment section",
+            "match": {
+              "location": "PostStepDefinitions.validateEmail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2121801,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "API schema for Comments should be correct",
+            "match": {
+              "location": "PostStepDefinitions.schemaForCommentsShouldBeCorrect()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
+            "name": "@schema"
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "To add posts using POST method",
+        "description": "",
+        "id": "to-test-the-post-and-comments-functionality-of-the-ui-application;to-add-posts-using-post-method",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1159903001,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Post feature is available to the user",
+            "match": {
+              "location": "PostStepDefinitions.featureIsAvailableToUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1082495001,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User add posts",
+            "match": {
+              "location": "PostStepDefinitions.addingPosts()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 332304300,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Checks that the post is added",
+            "match": {
+              "location": "PostStepDefinitions.validateAddPosts()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 35,
+            "name": "@error"
+          }
+        ]
+      },
+      {
+        "line": 42,
+        "name": "To delete posts using DELETE method",
+        "description": "",
+        "id": "to-test-the-post-and-comments-functionality-of-the-ui-application;to-delete-posts-using-delete-method",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 319306400,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Post feature is available to the user",
+            "match": {
+              "location": "PostStepDefinitions.featureIsAvailableToUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 694240901,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User delete posts 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 18
+                }
+              ],
+              "location": "PostStepDefinitions.deletingPosts(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 333373701,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Checks that the post 2 is deleted",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 21
+                }
+              ],
+              "location": "PostStepDefinitions.validateDeletePosts(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 41,
+            "name": "@error"
+          }
+        ]
+      },
+      {
+        "line": 48,
+        "name": "To perform the validation for invalid endpoint",
+        "description": "",
+        "id": "to-test-the-post-and-comments-functionality-of-the-ui-application;to-perform-the-validation-for-invalid-endpoint",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 344260400,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "Post feature is available to the user",
+            "match": {
+              "location": "PostStepDefinitions.featureIsAvailableToUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 735506299,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Searching the user with invalid endpoint",
+            "match": {
+              "location": "PostStepDefinitions.searchingTheUserWithInvalidEndpoint()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 512300,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "the status code is 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 19
+                }
+              ],
+              "location": "PostStepDefinitions.theStatusCodeIs(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 47,
+            "name": "@error"
+          }
+        ]
+      },
+      {
+        "line": 54,
+        "name": "To perform the validation for searching user with invalid id",
+        "description": "",
+        "id": "to-test-the-post-and-comments-functionality-of-the-ui-application;to-perform-the-validation-for-searching-user-with-invalid-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 332626499,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "Post feature is available to the user",
+            "match": {
+              "location": "PostStepDefinitions.featureIsAvailableToUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 814844901,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Searching the user with invalid id 345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "345",
+                  "offset": 35
+                }
+              ],
+              "location": "PostStepDefinitions.searchingTheUserWithInvalidId(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 508600,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "the status code is 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 19
+                }
+              ],
+              "location": "PostStepDefinitions.theStatusCodeIs(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 53,
+            "name": "@error"
+          }
+        ]
+      },
+      {
+        "line": 60,
+        "name": "To perform the validation for searching post with invalid id",
+        "description": "",
+        "id": "to-test-the-post-and-comments-functionality-of-the-ui-application;to-perform-the-validation-for-searching-post-with-invalid-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 329492099,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "Post feature is available to the user",
+            "match": {
+              "location": "PostStepDefinitions.featureIsAvailableToUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 705038100,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "Searching the post with invalid id 1234",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1234",
+                  "offset": 35
+                }
+              ],
+              "location": "PostStepDefinitions.searchingThePostWithInvalidId(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 431300,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "the status code is 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 19
+                }
+              ],
+              "location": "PostStepDefinitions.theStatusCodeIs(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 59,
+            "name": "@error"
+          }
+        ]
+      }
+    ],
+    "name": "To test the Post and Comments functionality of the UI application",
+    "description": "",
+    "id": "to-test-the-post-and-comments-functionality-of-the-ui-application",
+    "keyword": "Feature",
+    "uri": "PostComment.feature"
+  }
+]
